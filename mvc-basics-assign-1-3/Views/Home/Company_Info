@@ -1,0 +1,7 @@
+@{
+    ViewBag.Title = "Info";
+}
+
+<h1>Company Story</h1>
+<h2>Our story began in 1998. Back then we were a roaster and retailer of spices with a single store in Miami</h2>
+<h2> Today, we are priviliged to connect with millions of costumers every day with exceptional products</h2>
