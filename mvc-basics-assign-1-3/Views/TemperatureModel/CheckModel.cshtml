@@ -1,0 +1,21 @@
+﻿@model Temperature
+@{
+    ViewBag.Title = "Check Temperature model";
+}
+
+<form asp-action="CheckModel" method="post">
+    <label asp-for="UserTemp">Your temperature</label>
+    <input asp-for="UserTemp" />
+
+    <input type="submit" value="Check" />
+</form>
+
+@*@if (ViewBag.diagnose != null)
+    {
+        <h3>@ViewBag.diagnose</h3>
+    }*@
+
+@if (Model.Diagnose != null)
+{
+    <h3>@Model.Diagnose</h3>
+}
