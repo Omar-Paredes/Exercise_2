@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "TestLetter";
+}
+
+<h1>Guess a letter of the alphabet</h1>
+
+<form asp-action="TestLetter" method="post">
+    <label for="letter">Letter:</label>
+    <input id="letter" name="userGuess" type="text" />
+
+    <input type="submit" value="Test letter" />
+</form>
+
+@if (ViewBag.letter != null)
+{
+    <h3>@ViewBag.letter</h3>
+}
